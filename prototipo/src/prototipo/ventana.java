@@ -16,7 +16,7 @@ public class ventana extends javax.swing.JFrame {
      */
     public ventana() {
         initComponents();
-        this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null); // de codigo , solo agrede esto 
     }
 
     /**
@@ -41,7 +41,7 @@ public class ventana extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setText("INICIAR SESION");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -49,37 +49,29 @@ public class ventana extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(100, 230, 120, 23);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 120, -1));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel1.setText("NOMBRE DE USUARIO:");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(91, 130, 150, 15);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 130, 150, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("CONTRASEÑA:");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(141, 170, 100, 15);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(240, 130, 120, 20);
-        getContentPane().add(jTextField2);
-        jTextField2.setBounds(252, 166, 100, 20);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(141, 170, 100, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, 120, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(252, 166, 100, -1));
 
         jButton2.setText("CREAR CUENTA");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(260, 230, 120, 23);
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 120, -1));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setText("SALIR");
-        getContentPane().add(jButton3);
-        jButton3.setBounds(391, 340, 90, 23);
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 340, 90, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/logo - copia.png"))); // NOI18N
         jLabel4.setText("1");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(200, 30, 122, 88);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 122, 88));
 
         jPanel1.setLayout(null);
 
@@ -87,13 +79,11 @@ public class ventana extends javax.swing.JFrame {
         jPanel1.add(jLabel3);
         jLabel3.setBounds(0, 0, 34, 14);
 
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(38, 0, 54, 36);
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 0, 0, 0));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/ve.jpg"))); // NOI18N
         jLabel6.setText(".");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(0, 0, 520, 400);
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 360));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
