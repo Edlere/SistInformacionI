@@ -9,7 +9,6 @@ create table Cliente(
 create table Compra(
 IdCompra char(8) not null primary key,
 DNICliente char (8) not null,
-IdCliente integer not null,
 Fechadecompra date not null,
 MontoCompra double not null
 );
@@ -32,7 +31,7 @@ Nombrecat varchar (20) not null
 create table Articulo(
 Idarticulo char (6) not null primary key,
 Nombreart  varchar(20) not null ,
-Precio double not null
+Precio double not null,
 Descripcion varchar(75) not null,
 Idcategoria char (3) not null
 
