@@ -1774,6 +1774,7 @@
 									"wordWrap": false
 								}
 							],
+							"visible": true,
 							"enabled": true,
 							"lineColor": "#000000",
 							"fillColor": "#ffffff",
